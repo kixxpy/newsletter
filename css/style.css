@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --Tomato: hsl(4, 100%, 67%);
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: var(--Charcoal-Grey);
+}
+
+.card1 {
+  display: flex;
+  width: 750px;
+  height: 500px;
+  background: var(--White);
+  border-radius: 20px;
+  padding: 20px;
+}
+.card1-right {
+  padding: 25px 50px;
+}
+.card1-right h1 {
+  font-size: 48px;
+  color: var(--Dark-Slate-Grey);
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+.card1-right p {
+  font-size: 13px;
+  color: var(--Dark-Slate-Grey);
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+.card1-right-list {
+  font-size: 13px;
+  color: var(--Dark-Slate-Grey);
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.card1-right-list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.card1-right-list img {
+  margin-right: 10px;
+}
+.card1-right .form h2 {
+  font-size: 12px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.card1-right .form input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid var(--Grey);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  outline-color: var(--Tomato);
+}
+.card1-right .form button {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background: var(--Dark-Slate-Grey);
+  color: var(--White);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.card1-right .form button:hover {
+  background: var(--Tomato);
+  font-size: 13px;
+}
+.card1-left img {
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .card1 {
+    flex-direction: column-reverse;
+    height: 100vh;
+  }
+  .card1-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card1-left {
+    margin: auto;
+  }
+  .card1-left img {
+    content: url(/assets/images/illustration-sign-up-mobile.svg) !important;
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+  }
+}
+.card2 {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  background: var(--White);
+  border-radius: 20px;
+  padding: 50px;
+}
+.card2 img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.card2 h1 {
+  font-size: 46px;
+  color: var(--Dark-Slate-Grey);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.card2 p {
+  font-size: 13px;
+  color: var(--Dark-Slate-Grey);
+  font-weight: 400;
+  line-height: 17px;
+  margin-bottom: 25px;
+}
+.card2 p span {
+  font-weight: 700;
+}
+.card2 button {
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background: var(--Dark-Slate-Grey);
+  color: var(--White);
+  font-size: 12px;
+  transition: all 0.2s ease-in-out;
+}
+.card2 button:hover {
+  background: var(--Tomato);
+  font-size: 13px;
+}
+
+.hide {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
